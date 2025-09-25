@@ -1,17 +1,17 @@
-# Course Selection API
+# API Selector de cursos
 
-A Rails API for selecting and filtering course editions based on multiple criteria.
+Una API de Rails para prestar un servicio de selección de cursos ofertados.
 
 ------------------------------------------------------------------------
 
 ## Features
 
--   Filter courses by date (`closest`, `latest`), school (`school-XYZ`) and type (`type-XYZ`).\
--   Includes **RSpec request tests**.
+-   Filtrar cursos por el criterio de la más próxima edición (`closest`), el de fecha más lejana al actual (`latest`), el de escuela (`school-XYZ`) y el de tipo indicado (`type-XYZ`).\
+-   Incluye tests en Rspec para garantizar estabilidad del servicio.
 
 ------------------------------------------------------------------------
 
-## Setup
+## Instalación
 
 ``` bash
 git clone https://github.com/Getu11/OEIChallenge.git
@@ -19,7 +19,7 @@ cd OEIChallenge
 bundle install
 ```
 
-Start the Rails server:
+Arrancar el server de Rails:
 
 ``` bash
 bin/rails server
@@ -27,14 +27,12 @@ bin/rails server
 
 ------------------------------------------------------------------------
 
-## Usage
+## Script de Bash
 
-### Example Request
-
-The example included has the `test-case1.sh` script updated.\
-NOTE: the script had a `unknown operator` error (probably because I used ZSH), the original file is `test-case1-original.sh`.\
+El ejemplo incluido en el repositorio incluye un `test-case1.sh` (con el puerto cambiado a 3000 y un cambio de sintaxis que podría arreglar el script para quienes usan ZSH)\
+y el script de Bash original: `test-case1-original.sh`.\
 \
-With the Rails server on:
+Para ejecutarlo, hay que tener el server de Rails iniciado.
 ``` bash
 ./test-case1.sh
 Test 1 : [  OK  ]
@@ -46,13 +44,12 @@ Test 4 : [  OK  ]
 
 ## Testing
 
-Run all tests:
-
+Ejecutar tests:
 ``` bash
 bundle exec rspec --format documentation
 ```
 
-Example output:
+Debería salir lo siguiente:
 ``` bash
 Course Selection API
   criteria: closest
