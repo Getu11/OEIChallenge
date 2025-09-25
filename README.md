@@ -32,6 +32,7 @@ bin/rails server
 ### Example Request
 
 The example included has the `test-case1.sh` script updated
+NOTE: the script had a `unknown operator` error (probably because I used ZSH), the original file is `test-case1-original.sh`. 
 ``` bash
 ./test-case1.sh
 Test 1 : [  OK  ]
@@ -39,10 +40,9 @@ Test 2 : [  OK  ]
 Test 3 : [  OK  ]
 Test 4 : [  OK  ]
 ```
-NOTE: the script had a `unknown operator` error (probably because I used ZSH), the original file is `test-case1-original.sh`. 
 ------------------------------------------------------------------------
 
-## 🧪 Testing
+## Testing
 
 Run all tests:
 
