@@ -31,8 +31,10 @@ bin/rails server
 
 ### Example Request
 
-The example included has the `test-case1.sh` script updated\
-NOTE: the script had a `unknown operator` error (probably because I used ZSH), the original file is `test-case1-original.sh`. 
+The example included has the `test-case1.sh` script updated.\
+NOTE: the script had a `unknown operator` error (probably because I used ZSH), the original file is `test-case1-original.sh`.\
+\
+With the Rails server on:
 ``` bash
 ./test-case1.sh
 Test 1 : [  OK  ]
